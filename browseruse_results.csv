@@ -1,0 +1,22 @@
+run_id,completed,json_parsed,passed,listed_price,cart_price,cart_badge_count,duration_sec,error,raw_output
+1,True,True,True,$29.99,$29.99,1,193.53,,"```json
+{
+  ""listed_price"": ""$29.99"",
+  ""cart_badge_count"": ""1"",
+  ""cart_price"": ""$29.99""
+}
+```"
+2,True,True,True,$29.99,$29.99,1,487.13,,"```json
+{
+  ""listed_price"": ""$29.99"",
+  ""cart_badge_count"": ""1"",
+  ""cart_price"": ""$29.99""
+}
+```"
+3,True,True,True,$29.99,$29.99,1,192.22,,"```json
+{
+  ""listed_price"": ""$29.99"",
+  ""cart_badge_count"": ""1"",
+  ""cart_price"": ""$29.99""
+}
+```"

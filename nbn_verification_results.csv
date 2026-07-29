@@ -1,0 +1,16 @@
+run,timestamp,status,duration_seconds,reported_url,reported_status,reported_date,raw_output_excerpt
+1,2026-07-09T07:56:20.733473+00:00,PASS,375.66,https://app-qa.nbn.be/data/r/platform/frontend/detail?p40_id=214772,ACTIVE,23 May 2019,"```json
+{
+  ""current_url"": ""https://app-qa.nbn.be/data/r/platform/frontend/detail?p40_id=214772"",
+  ""status"": ""ACTIVE"",
+  ""publication_date"": ""23 May 2019""
+}
+```"
+2,2026-07-09T08:01:39.955877+00:00,PASS,319.15,https://app-qa.nbn.be/data/r/platform/frontend/detail?p40_id=214772,ACTIVE,23 May 2019,"```json
+{
+  ""current_url"": ""https://app-qa.nbn.be/data/r/platform/frontend/detail?p40_id=214772"",
+  ""status"": ""ACTIVE"",
+  ""publication_date"": ""23 May 2019""
+}
+```"
+3,2026-07-09T08:11:09.376272+00:00,PASS,569.35,https://app-qa.nbn.be/data/r/platform/frontend/detail?p40_id=214772&session=16087225808456,ACTIVE,23 May 2019,"{""current_url"": ""https://app-qa.nbn.be/data/r/platform/frontend/detail?p40_id=214772&session=16087225808456"", ""status"": ""ACTIVE"", ""publication_date"": ""23 May 2019""}"

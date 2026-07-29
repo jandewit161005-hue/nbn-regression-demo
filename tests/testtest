@@ -1,0 +1,28 @@
+cat > tests/inspect.spec.ts << 'EOF'
+import { test } from '@playwright/test';
+
+test('inspect login page elements', async ({ page }) => {
+  await page.goto('https://app-qa.nbn.be/data/r/platform/frontend/login');
+  console.log('TITLE:', await page.title());
+
+  const inputs = await page.locator('input').evaluateAll((els) =>
+    els.map((el) => ({
+      placeholder: el.getAttribute('placeholder'),
+      type: el.getAttribute('type'),
+      name: el.getAttribute('name'),
+      id: el.getAttribute('id'),
+    }))
+  );
+  console.log('INPUTS:', JSON.stringify(inputs, null, 2));
+
+  const buttons = await page.locator('button').evaluateAll((els) =>
+    els.map((el) => ({
+      text: el.textContent?.trim(),
+      type: el.getAttribute('type'),
+    }))
+  );
+  console.log('BUTTONS:', JSON.stringify(buttons, null, 2));
+
+  await page.screenshot({ path: 'inspect-login.png', fullPage: true });
+});
+EOF
